@@ -1,8 +1,8 @@
-﻿/* I kept going back and forth on whether to place the code in a Main method in the class definition or write the code and methods at the top level. I settled on the way the book is teaching it, as the homework instructions seemed to work well this way. Please let me know if you'd prefer I do it the other way. */
+﻿/* I kept going back and forth on whether to place the code in a Main method in the class definition or write the code and methods at the top level. I settled on the way the book is teaching it, as the provided video demo did it this way. Please let me know if you'd prefer I do it the other way. */
 
 class ParametersDemo
 {
-    public static void Main()
+    static void Main()
     {
         // Pass in a value type
         // Since the int is passed by value, the value of the int is unchanged.
