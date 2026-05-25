@@ -1,4 +1,9 @@
-﻿using StudentClassDemo;
+﻿// Programmer: Scott Walker
+// Email: swalker62@student.cnm.edu
+// Project: Student Class Demo
+// Purpose: Learning about classes
+
+using StudentClassDemo;
 
 namespace StudenClassDemo
 {
