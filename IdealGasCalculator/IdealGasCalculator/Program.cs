@@ -8,7 +8,7 @@ Date: 5/23/26
 using System.Runtime.CompilerServices; // This was added by Visual Studio
 using System.Linq; // I am using this to check for membership within an array ie: array.Contains(element)
 
-class IdealGasCalculator
+class Program
 { 
     static void Main()
     {
