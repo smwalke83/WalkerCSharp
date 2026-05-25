@@ -12,6 +12,7 @@ namespace StudentClassDemo
     class Student
     {
         // Fields
+        public static string[] majors = new string[] { "Programming", "Business", "Art History" };
         private string major;
         private int score1;
         private int score2;
@@ -71,8 +72,9 @@ namespace StudentClassDemo
 
         public string GetSummary()
         {
+            // Changed this to actually calc the average, then added major details after updating for Static Method Demo
             Calc();
-            return studentFirstName + " " + studentLastName + " " + studentNumber + " Average: " + average;
+            return studentFirstName + " " + studentLastName + " " + studentNumber + " Major: " + major + " Average: " + average;
         }
 
         // Mutators (setters)

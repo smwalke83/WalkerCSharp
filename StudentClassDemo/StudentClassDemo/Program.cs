@@ -19,8 +19,16 @@ namespace StudenClassDemo
                 student.SetStudentFirstName(firstName);
                 string lastName = GetInput("Last Name: ");
                 student.SetStudentLastName(lastName);
-                string major = GetInput("Major: ");
-                student.SetMajor(major);
+                // string major = GetInput("Major: "); // These two lines have been commented out to add code for the Static Class Members Demo, seen below
+                // student.SetMajor(major);
+                Console.WriteLine("Majors: ");
+                for (int i = 0; i < Student.majors.Length; i++)
+                {
+                    Console.WriteLine((i + 1).ToString() + ". " + Student.majors[i]);
+                }
+                int majorIndex = int.Parse(GetInput("Major: ")) - 1;
+                student.SetMajor(Student.majors[majorIndex]);
+                // This is the end of the new code added from the new Demo
                 string studentNum = GetInput("Student Number: ");
                 student.SetStudentNumber(studentNum);
                 int score1 = int.Parse(GetInput("Score 1: "));
