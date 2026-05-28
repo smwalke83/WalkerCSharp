@@ -1,18 +1,26 @@
-﻿using System;
+﻿// Programmer: Scott Walker
+// Email: swalker62@cnm.edu
+// Program: Ideal Gas Calculator With Class
+// Purpose: Recreating the ideal gas calculator with a class containing private fields and get/set methods
+
+// These were all added by VS
+using System;
 using System.Collections.Generic;
 using System.Text;
 
+// This was also added by VS, but I shortened the name of the namespace
 namespace IdealGasClass
 {
     class IdealGas
     {
+        // Initializing private fields for ideal gas properties
         private double mass;
         private double volume;
         private double temp;
         private double molecularWeight;
         private double pressure;
 
-        // Getters
+        // Public getters for the private fields
         public double GetMass()
         {
             return mass;
@@ -63,6 +71,7 @@ namespace IdealGasClass
             Calc();
         }
 
+        // Pressure calculator, called when a value changes in an instance of the class
         private void Calc()
         {
             const double IDEAL_GAS_CONST = 8.3145;
