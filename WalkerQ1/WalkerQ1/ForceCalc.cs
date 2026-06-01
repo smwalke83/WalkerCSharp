@@ -11,7 +11,7 @@ namespace WalkerQ1
     public class ForceCalc
     {
         // properties
-        private const double gConstant = 6.67408e-11;
+        private const double gConstant = 6.67408e-11; // I believe this could also be a static value, all that would change is the way it is accessed.
         public string Object1 { get; set; }
         public string Object2 { get; set; }
         public double GForce { get; private set; }
