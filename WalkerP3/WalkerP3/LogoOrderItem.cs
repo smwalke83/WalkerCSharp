@@ -78,7 +78,7 @@ namespace WalkerP3
                     price += (decimal) 4.00 * numItems;
                     break;
                 default:
-                    // Error message?
+                    Console.WriteLine("Item type must be: 'mug', 'pen', or 'usb drive'.");
                     break;
             }
             if (text.Length > 0) 

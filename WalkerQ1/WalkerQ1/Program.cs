@@ -27,7 +27,7 @@ do
     }
     catch (Exception e) 
     {
-        Console.WriteLine("Error: " + e);
+        Console.WriteLine("Error: " + e.Message);
         Console.WriteLine("Please try again.");
         continue;
     }
