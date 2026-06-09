@@ -24,14 +24,37 @@ namespace TShirtOrders
                 switch(option)
                 {
                     case 'A':
-                        AddShirtOrder(orders);
-                        break;
+                        // Added error handling for AddShirtOrder and RemoveShirtOrder since they both rely on user input. If there's an error the loop restarts
+                        try
+                        {
+                            AddShirtOrder(orders);
+                            break;
+                        }
+                        catch (Exception ex) 
+                        {
+                            Console.WriteLine("Error: " + ex.Message);
+                            continue;
+                        }
                     case 'R':
-                        RemoveShirtOrder(orders);
-                        break;
+                        try
+                        {
+                            RemoveShirtOrder(orders);
+                            break;
+                        }
+                        catch (Exception ex) 
+                        {
+                            Console.WriteLine("Error: " + ex.Message);
+                            continue;
+                        }
                     case 'T':
                         DisplayTotal(orders);
                         break;
+                    // Added these; if input is E then the switch case and loop will both be exited, if it's anything else the loop starts over
+                    case 'E':
+                        break;
+                    default:
+                        Console.WriteLine("Invalid Input.");
+                        continue;
 
                 }                
             } while (option!='E');
