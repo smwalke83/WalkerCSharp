@@ -189,6 +189,7 @@
             txbResults.Location = new Point(328, 136);
             txbResults.Multiline = true;
             txbResults.Name = "txbResults";
+            txbResults.ReadOnly = true;
             txbResults.Size = new Size(416, 183);
             txbResults.TabIndex = 11;
             txbResults.Text = "Click Submit for results.";
