@@ -12,7 +12,7 @@ namespace WalkerP4
             {
                 decimal annualDep = 2m / Lifetime;
                 TimeSpan difference = DateRemovedFromInventory - DateAddedToINventory;
-                // Since this isn't a striaght line calculation, I am rounding the time passed up to the nearest year and calculating based on that (if <1 year passes, it depreciates by 1 year, if it's between 1 and 2 years, then it's treated as 2 years, etc
+                // Need to find proper calculation
                 int yearsPassed = (int)Math.Ceiling(difference.TotalDays / 365);
                 SalvageValue = StartValue;
                 for (int i = 0; i < yearsPassed; i++) 
