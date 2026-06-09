@@ -24,7 +24,7 @@ namespace TShirtOrders
                 switch(option)
                 {
                     case 'A':
-                        // Added error handling for AddShirtOrder and RemoveShirtOrder since they both rely on user input. If there's an error the loop restarts
+                        //SW Added error handling for AddShirtOrder and RemoveShirtOrder since they both rely on user input. If there's an error the loop restarts
                         try
                         {
                             AddShirtOrder(orders);
@@ -49,7 +49,7 @@ namespace TShirtOrders
                     case 'T':
                         DisplayTotal(orders);
                         break;
-                    // Added these; if input is E then the switch case and loop will both be exited, if it's anything else the loop starts over
+                    //SW Added these; if input is E then the switch case and loop will both be exited, if it's anything else the loop starts over
                     case 'E':
                         break;
                     default:
@@ -75,7 +75,7 @@ namespace TShirtOrders
             int index = GetIntFromUser("Enter index of shirt order to remove: ");
             if (GetBoolFromUser("Are you sure you want to delete this order"))
             {
-                // This line was passing the index value into the Remove method, which wants the value of the item in the list, not the index. I also removed one from the user provided index as they are likely to provide a number starting from 1, not 0, based on the way the list is displayed to them
+                //SW This line was passing the index value into the Remove method, which wants the value of the item in the list, not the index. I also removed one from the user provided index as they are likely to provide a number starting from 1, not 0, based on the way the list is displayed to them
                 orders.Remove(orders[index -1]);
             }
         }
@@ -102,7 +102,7 @@ namespace TShirtOrders
             Console.WriteLine("Current shirts orders:");
             if (orders.Count > 0)
             {
-                // Orders.Count was initailly called like a method instead of a property ( orders.Count() )
+                //SW Orders.Count was initailly called like a method instead of a property ( orders.Count() )
                 for (int i = 0; i < orders.Count; ++i)
                 {
                     Console.WriteLine((i + 1) + ": " + orders[i]);
