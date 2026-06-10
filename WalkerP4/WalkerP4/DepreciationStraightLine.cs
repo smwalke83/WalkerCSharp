@@ -1,4 +1,9 @@
-﻿using System;
+﻿// Programmer: Scott Walker
+// Email: swalker62@student.cnm.edu
+// Project: Depreciation Form
+// File: DepreciationStraightLine.cs
+
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
@@ -7,6 +12,7 @@ namespace WalkerP4
 {
     public class DepreciationStraightLine
     {
+        // fields with getters and setters
         private DateTime dateAddedToInventory;
         public DateTime DateAddedToINventory 
         {
@@ -40,10 +46,13 @@ namespace WalkerP4
         public decimal SalvageValue { get; set; }
         public string Title { get; set; }
 
+        // overridable calc method
         protected virtual void Calc() 
         {
+            // validing that a lifetime over zero exists to avoid dividing by zero, and the calculation wouldn't matter if the item had no estimated lifetime
             if (lifetime > 0)
             {
+                // annual dollar value of depreciation is calculated, then the exact time passed in years. The two are multiplied together and subtracted from the start value to get a present salvage value
                 decimal annualDep = (startValue - endValue) / lifetime;
                 TimeSpan difference = dateRemovedFromInventory - dateAddedToInventory;
                 decimal yearsPassed = (decimal)(difference.TotalDays / 365);
@@ -55,6 +64,7 @@ namespace WalkerP4
             }
         }
 
+        // overriding the ToString method for straight line depreciation
         public override string ToString()
         {
             return "Straight Line - Title: " + Title + " Start Value: " + startValue + " End Value: " + endValue + " Lifetime: " + lifetime;

@@ -1,4 +1,9 @@
-﻿namespace WalkerP4
+﻿// Programmer: Scott Walker
+// Email: swalker62@student.cnm.edu
+// Project: Depreciation Form
+// File: Form1.Designer.cs
+
+namespace WalkerP4
 {
     partial class Form1 : Form
     {
@@ -33,6 +38,7 @@
             txbWelcome = new TextBox();
             lblHeader = new Label();
             tabInventory = new TabPage();
+            txbError = new TextBox();
             btnAdd = new Button();
             btnRemove = new Button();
             dtpDateOut = new DateTimePicker();
@@ -53,7 +59,6 @@
             tabSummary = new TabPage();
             lblCalcValue = new Label();
             btnCalcValue = new Button();
-            txbError = new TextBox();
             tabControl1.SuspendLayout();
             tabHowTo.SuspendLayout();
             tabInventory.SuspendLayout();
@@ -129,6 +134,16 @@
             tabInventory.TabIndex = 1;
             tabInventory.Text = "Inventory";
             tabInventory.UseVisualStyleBackColor = true;
+            // 
+            // txbError
+            // 
+            txbError.AcceptsReturn = true;
+            txbError.Location = new Point(331, 341);
+            txbError.Name = "txbError";
+            txbError.Size = new Size(371, 23);
+            txbError.TabIndex = 19;
+            txbError.Text = "Errors: None";
+            txbError.Visible = false;
             // 
             // btnAdd
             // 
@@ -310,15 +325,6 @@
             btnCalcValue.Text = "Calculate Inventory Value";
             btnCalcValue.UseVisualStyleBackColor = true;
             btnCalcValue.Click += btnCalcValue_Click;
-            // 
-            // txbError
-            // 
-            txbError.AcceptsReturn = true;
-            txbError.Location = new Point(331, 341);
-            txbError.Name = "txbError";
-            txbError.Size = new Size(371, 23);
-            txbError.TabIndex = 19;
-            txbError.Text = "Errors: None";
             // 
             // Form1
             // 
