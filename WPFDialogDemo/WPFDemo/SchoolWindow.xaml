@@ -1,0 +1,36 @@
+﻿<Window x:Class="WPFDemo.SchoolWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFDemo"
+        mc:Ignorable="d"
+        Title="SchoolWindow" Height="450" Width="800">
+    <Grid Margin="0,0,10,0">
+        <TabControl HorizontalAlignment="Left" Height="288" Margin="1,32,0,0" VerticalAlignment="Top" Width="469">
+            <TabItem Header="Campuses">
+                <Grid Background="#FFE5E5E5">
+                    <ListBox x:Name="lbCampuses" HorizontalAlignment="Left" Height="260" Width="463" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Major">
+                <Grid Background="#FFE5E5E5">
+                    <ListBox x:Name="lbMajors" HorizontalAlignment="Left" VerticalAlignment="Center" Height="260" Width="463" Grid.ColumnSpan="2"/>
+                </Grid>
+            </TabItem>
+            <TabItem HorizontalAlignment="Center" Height="20" Header="Courses" VerticalAlignment="Center" Width="54">
+                <Grid Background="#FFE5E5E5">
+                    <ListBox x:Name="lbCourses" HorizontalAlignment="Left" VerticalAlignment="Top" Height="260" Width="463"/>
+                </Grid>
+            </TabItem>
+            <TabItem HorizontalAlignment="Center" Height="20" Header="Students" VerticalAlignment="Center" Width="54">
+                <Grid Background="#FFE5E5E5">
+                    <ListBox x:Name="lbStudents" HorizontalAlignment="Left" VerticalAlignment="Top" Height="224" Width="463" MouseDoubleClick="lbStudents_MouseDoubleClick"/>
+                    <Button Content="Add Student" HorizontalAlignment="Left" Margin="10,229,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Width="200" Height="21" Click="Button_Click"/>
+                    <Button Content="Save Student List" HorizontalAlignment="Left" Margin="255,230,0,0" Width="200" Height="21" Click="Button_Click_1"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
