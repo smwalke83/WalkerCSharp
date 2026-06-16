@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WalkerP5"
         mc:Ignorable="d"
-        Title="Sprocket Order Form" Height="450" Width="450">
+        Title="Sprocket Order Form - Scott Walker" Height="450" Width="450">
     <Grid>
         <Label x:Name="lblTitle" Content="Super Sprocket Order Manager 3000" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="356" FontWeight="Bold" FontSize="20"/>
         <Label x:Name="lblCustomerName" Content="Customer Name" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top"/>
