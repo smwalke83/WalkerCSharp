@@ -112,6 +112,7 @@ namespace WPFDemo
             }
         }
 
+        // Handling clicking of Add Campus - Makes sure there is text, then adds it to the list and list box, and resets the text box
         private void btnAddCampus_Click(object sender, RoutedEventArgs e)
         {
             if (txbAddCampus.Text.Length > 0)
@@ -122,6 +123,7 @@ namespace WPFDemo
             txbAddCampus.Text = "";
         }
 
+        // Handling clicking of Remove Selected Campus - Makes sure an item is selected, casts it back into a string, and removes it from the lists
         private void btnRemoveCampus_Click(object sender, RoutedEventArgs e)
         {
             if (lbCampuses.SelectedItem != null)
@@ -131,6 +133,7 @@ namespace WPFDemo
             }
         }
 
+        // Handling clicking of Add Major - Makes sure there is text, then adds it to the list and list box, and resets the text box
         private void btnAddMajor_Click(object sender, RoutedEventArgs e)
         {
             if (txbAddMajor.Text.Length > 0)
@@ -141,6 +144,7 @@ namespace WPFDemo
             txbAddMajor.Text = "";
         }
 
+        // Handling clicking of Remove Selected Major - Makes sure an item is selected, casts it back into a string, and removes it from the lists
         private void btnRemoveMajor_Click(object sender, RoutedEventArgs e)
         {
             if (lbMajors.SelectedItem != null)
@@ -150,6 +154,7 @@ namespace WPFDemo
             }
         }
 
+        // Handling clicking of Add Course - Makes sure there is text, then adds it to the list and list box, and resets the text box
         private void btnAddCourse_Click(object sender, RoutedEventArgs e)
         {
             if (txbAddCourse.Text.Length > 0)
@@ -160,6 +165,7 @@ namespace WPFDemo
             txbAddCourse.Text = "";
         }
 
+        // Handling clicking of Remove Selected Course - Makes sure an item is selected, casts it back into a string, and removes it from the lists
         private void btnRemoveCourse_Click(object sender, RoutedEventArgs e)
         {
             if (lbCourses.SelectedItem != null)
