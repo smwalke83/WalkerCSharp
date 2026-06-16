@@ -1,0 +1,17 @@
+﻿<Window x:Class="WPFLayoutDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFLayoutDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnStackPanel" Content="StackPanelDemo" HorizontalAlignment="Left" VerticalAlignment="Top" Height="107" Width="284" Click="btnStackPanel_Click" Margin="31,52,0,0"/>
+        <Button x:Name="btnWrapPanel" Content="WrapPanelDemo" HorizontalAlignment="Left" VerticalAlignment="Top" Height="106" Width="284" Click="btnWrapPanel_Click" Margin="452,53,0,0"/>
+        <Button x:Name="btnCanvasPanel" Content="CanvasPanelDemo" HorizontalAlignment="Left" VerticalAlignment="Top" Height="107" Width="284" Click="btnCanvasPanel_Click" Margin="31,190,0,0"/>
+        <Button x:Name="btnDockPanel" Content="DockPanelDemo" HorizontalAlignment="Left" Margin="452,190,0,0" VerticalAlignment="Top" Height="107" Width="284" Click="btnDockPanel_Click"/>
+        <Button x:Name="btnGridPanel" Content="GridPanelDemo" HorizontalAlignment="Left" Margin="243,317,0,0" VerticalAlignment="Top" Width="284" Height="107" Click="btnGridPanel_Click"/>
+
+    </Grid>
+</Window>
