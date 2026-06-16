@@ -18,10 +18,23 @@ namespace WalkerP5
         public string Street { get; set; }
         public string ZipCode { get; set; }
 
+        // Constructors - one with each field, one that gives defaults to each field
+        public Address(string city, string state, string street, string zip) 
+        {
+            City = city;
+            State = state;
+            Street = street;
+            ZipCode = zip;
+        }
+
+        public Address() : this("", "", "", "") 
+        {
+        }
+        
         // To String override to describe the address
         public override string ToString()
         {
-            return " " + Street + "\n" + City + ", " + State + ", " + ZipCode;
+            return Street + "\n" + City + ", " + State + ", " + ZipCode;
         }
     }
 }
