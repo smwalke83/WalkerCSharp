@@ -8,24 +8,25 @@ namespace WPFDemo
 {
     public class School
     {
-        private string[] courses;
-        private string[] majors;
-        private string[] campuses;
+        // Changed these from Arrays to Lists to make them mutable
+        private List<String> courses;
+        private List<String> majors;
+        private List<String> campuses;
         private List<Student> students;
 
-        public string[] Courses 
+        public List<String> Courses 
         {
             get { return courses; }
             set { courses = value; }
         }
 
-        public string[] Majors 
+        public List<String> Majors 
         {
             get { return majors; }
             set { majors = value; }
         }
 
-        public string[] Campuses 
+        public List<String> Campuses 
         {
             get { return campuses; }
             set { campuses = value; }
@@ -39,9 +40,9 @@ namespace WPFDemo
 
         public School() 
         {
-            courses = new string[] { "CIS 101", "CIS 102", "CIS 103", "CIS 104" };
-            majors = new string[] { "Programming", "Web Design", "IT" };
-            campuses = new string[] { "Main", "Montoya", "Rio Rancho" };
+            courses = new List<String> { "CIS 101", "CIS 102", "CIS 103", "CIS 104" };
+            majors = new List<String> { "Programming", "Web Design", "IT" };
+            campuses = new List<String> { "Main", "Montoya", "Rio Rancho" };
             students = new List<Student>();
         }
     }

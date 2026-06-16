@@ -11,7 +11,6 @@
         <TextBox x:Name="txbStudentNum" HorizontalAlignment="Left" Height="23" Margin="212,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258"/>
         <Label Content="Major:" HorizontalAlignment="Left" Margin="66,125,0,0" VerticalAlignment="Top" Width="117"/>
         <TextBox x:Name="txbMajor" HorizontalAlignment="Left" Height="23" Margin="212,125,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258"/>
-        <TextBlock x:Name="txbResults" HorizontalAlignment="Left" Margin="7,383,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="93" Width="499"/>
         <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="180,337,0,0" VerticalAlignment="Top" Width="144" Click="btnSubmit_Click"/>
         <Label Content="Scores:" HorizontalAlignment="Left" Margin="66,155,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txbScore" HorizontalAlignment="Left" Height="23" Margin="337,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
@@ -21,5 +20,6 @@
         <Label Content="Title" HorizontalAlignment="Left" Margin="212,271,0,0" VerticalAlignment="Top"/>
         <Label Content="Score" HorizontalAlignment="Left" Margin="337,271,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="341,337,0,0" VerticalAlignment="Top" Width="129" Click="btnCancel_Click"/>
+        <Button x:Name="btnRemove" Content="Remove Selected Score" HorizontalAlignment="Left" Margin="66,203,0,0" VerticalAlignment="Top" Click="btnRemove_Click"/>
     </Grid>
 </Window>

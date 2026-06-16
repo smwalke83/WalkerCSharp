@@ -10,17 +10,34 @@
         <TabControl HorizontalAlignment="Left" Height="288" Margin="1,32,0,0" VerticalAlignment="Top" Width="469">
             <TabItem Header="Campuses">
                 <Grid Background="#FFE5E5E5">
-                    <ListBox x:Name="lbCampuses" HorizontalAlignment="Left" Height="260" Width="463" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="82*"/>
+                        <ColumnDefinition Width="381*"/>
+                    </Grid.ColumnDefinitions>
+                    <ListBox x:Name="lbCampuses" HorizontalAlignment="Left" Height="224" Width="463" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="txbAddCampus" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="10,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Button x:Name="btnAddCampus" Grid.Column="1" Content="Add Campus" HorizontalAlignment="Left" Margin="70,231,0,0" VerticalAlignment="Top" Width="120" Click="btnAddCampus_Click"/>
+                    <Button x:Name="btnRemoveCampus" Grid.Column="1" Content="Remove Selected" HorizontalAlignment="Left" Margin="223,232,0,0" VerticalAlignment="Top" Width="148" Click="btnRemoveCampus_Click"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Major">
                 <Grid Background="#FFE5E5E5">
-                    <ListBox x:Name="lbMajors" HorizontalAlignment="Left" VerticalAlignment="Center" Height="260" Width="463" Grid.ColumnSpan="2"/>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="33*"/>
+                        <ColumnDefinition Width="430*"/>
+                    </Grid.ColumnDefinitions>
+                    <ListBox x:Name="lbMajors" HorizontalAlignment="Left" VerticalAlignment="Top" Height="224" Width="463" Grid.ColumnSpan="2"/>
+                    <Button x:Name="btnAddMajor" Grid.Column="1" Content="Add Major" HorizontalAlignment="Left" Margin="119,231,0,0" VerticalAlignment="Top" Width="120" Click="btnAddMajor_Click"/>
+                    <TextBox x:Name="txbAddMajor" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="10,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Button x:Name="btnRemoveMajor" Grid.Column="1" Content="Remove Selected" HorizontalAlignment="Left" Margin="272,232,0,0" VerticalAlignment="Top" Width="148" Click="btnRemoveMajor_Click"/>
                 </Grid>
             </TabItem>
             <TabItem HorizontalAlignment="Center" Height="20" Header="Courses" VerticalAlignment="Center" Width="54">
                 <Grid Background="#FFE5E5E5">
-                    <ListBox x:Name="lbCourses" HorizontalAlignment="Left" VerticalAlignment="Top" Height="260" Width="463"/>
+                    <ListBox x:Name="lbCourses" HorizontalAlignment="Left" VerticalAlignment="Top" Height="224" Width="463"/>
+                    <TextBox x:Name="txbAddCourse" HorizontalAlignment="Left" Margin="10,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Button x:Name="btnAddCourse" Content="Add Course" HorizontalAlignment="Left" Margin="152,231,0,0" VerticalAlignment="Top" Width="120" Click="btnAddCourse_Click"/>
+                    <Button x:Name="btnRemoveCourse" Content="Remove Selected" HorizontalAlignment="Left" Margin="305,232,0,0" VerticalAlignment="Top" Width="148" Click="btnRemoveCourse_Click"/>
                 </Grid>
             </TabItem>
             <TabItem HorizontalAlignment="Center" Height="20" Header="Students" VerticalAlignment="Center" Width="54">
@@ -31,6 +48,7 @@
                 </Grid>
             </TabItem>
         </TabControl>
+        
 
     </Grid>
 </Window>
