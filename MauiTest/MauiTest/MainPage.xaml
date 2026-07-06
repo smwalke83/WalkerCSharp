@@ -6,43 +6,50 @@
     <ScrollView>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="50" />
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200" />
-                <ColumnDefinition Width="200"/>
+                <ColumnDefinition  />
+                <ColumnDefinition  />
             </Grid.ColumnDefinitions>
+            
             <Label
                 Text="Scott Walker P6 - Do/Undo"
                 FontSize="24"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                Grid.Row="0" />
+                Grid.Row="0"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
             <Label
                 Text="Enter Item Name"
                 FontSize="12"
-                Style="{StaticResource SubHeadline}"
                 Grid.Column="0"
-                Grid.Row="1" />
+                Grid.Row="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
 
             <Label
                 Text="Inventory List"
                 FontSize="12"
-                Style="{StaticResource SubHeadline}"
                 Grid.Column="1"
-                Grid.Row="1" />
+                Grid.Row="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
 
             <Entry 
                 x:Name="txbItemName"
                 Grid.Column="0"
-                Grid.Row="2"/>
+                Grid.Row="2"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="150" />
 
             <Button
                 x:Name="btnAddItem"
@@ -79,13 +86,6 @@
                 Grid.Column="1"
                 Grid.Row="2"
                 Grid.RowSpan="4">
-                <CollectionView.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>Mock Item 1</x:String>
-                        <x:String>Mock Item 2</x:String>
-                        <x:String>Mock Item 3</x:String>
-                    </x:Array>
-                </CollectionView.ItemsSource>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Grid Padding="12, 8">
@@ -94,6 +94,14 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+
+            <Image Source="dotnet_bot.png"
+                   HeightRequest="200"
+                   WidthRequest="200"
+                   HorizontalOptions="Center" 
+                   Grid.Row="6"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2" />
         </Grid>
     </ScrollView>
 
