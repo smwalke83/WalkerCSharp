@@ -56,7 +56,7 @@ namespace WalkerP6
         // When the Add Random Number button is clicked, this method is called
         private void btnAddMultiple_Click(object sender, RoutedEventArgs e)
         {
-            // If ther is no text in the input field, nothing happens
+            // If there is no text in the input field, nothing happens
             if (txbItemName.Text.Length > 0) 
             {
                 // Saves the name in the text box, creates an inventory item with said name, then creates an Add Multiple command object with the item and the inventory list

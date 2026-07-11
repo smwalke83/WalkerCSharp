@@ -1,0 +1,18 @@
+﻿<Window x:Class="WalkerQ4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WalkerQ4"
+        mc:Ignorable="d"
+        Title="Super Energy Educator 3000" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lblTitle" Content="    Welcome to Super Energy Educator 3000.&#xD;&#xA;Select a fuel type and click Get Info button." HorizontalAlignment="Center" Margin="0,45,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" Width="462" Height="47" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <RadioButton x:Name="rbGasoline" Content="Gasoline" HorizontalAlignment="Left" Margin="365,119,0,0" VerticalAlignment="Top" IsChecked="True" Tag=""/>
+        <RadioButton x:Name="rbEthanol" Content="Ethanol" HorizontalAlignment="Left" Margin="365,150,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbMethanol" Content="Methanol" HorizontalAlignment="Left" Margin="365,180,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.985,-3.921"/>
+        <Button x:Name="btnGetInfo" Content="Get Info" HorizontalAlignment="Center" Margin="0,233,0,0" VerticalAlignment="Top" Height="55" Width="198" FontSize="18" FontWeight="Bold" Background="#FF475FC3" Click="btnGetInfo_Click"/>
+        <TextBlock x:Name="txblSummary" HorizontalAlignment="Center" Margin="0,317,0,0" TextWrapping="Wrap" Text="Click &quot;Get Info&quot; To See a Summary!" VerticalAlignment="Top" Height="107" Width="198"/>
+
+    </Grid>
+</Window>
