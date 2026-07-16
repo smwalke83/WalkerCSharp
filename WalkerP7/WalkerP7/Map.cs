@@ -58,8 +58,12 @@ namespace WalkerP7
             Locations[3].TravelOptions.Add(new TravelOption("Go back to the entrance.", Locations[1]));
             Locations[3].TravelOptions.Add(new TravelOption("Head left, toward the ring toss game.", Locations[4]));
             Locations[3].TravelOptions.Add(new TravelOption("Head right, toward the shooting game.", Locations[5]));
-            // There is a deck of cards (portable) that can be picked up in this locaton.
+            // There is a deck of cards (portable) that can be picked up in this locaton, as well as a trash can (hiding place, not portable) containing a rigged deck of cards if searched.
             Locations[3].Items.Add(new InventoryItem(1, "Deck of Cards"));
+            HidingPlace trashCan = new HidingPlace("Trash Can");
+            trashCan.HiddenObject = new InventoryItem(1, "Rigged Deck of Cards");
+            Locations[3].Items.Add(trashCan);
+
 
             // The fifth location is a ring toss game. You can only go back from here.
             Locations[4].TravelOptions.Add(new TravelOption("Go back to the carnival game entrance.", Locations[3]));

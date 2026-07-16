@@ -139,6 +139,7 @@ namespace WalkerP7
             // Casting the object to IPortable and removing it from the inventory list, then adding it to the location items list
             player.RemoveInventoryItem((IPortable)obj);
             player.Location.Items.Add(obj);
+            txbGameStatus.Text = "Successfully dropped " + obj.ToString() + "!";
         }
     }
 }
